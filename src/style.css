@@ -1,11 +1,43 @@
+/* Titan One */
+@font-face {
+  font-family: "Titan One";
+  src: url("public/Fonts/TitanOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Pompiere */
+@font-face {
+  font-family: "Pompiere";
+  src: url("public/Fonts/Pompiere-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap");
+@theme inline {
+  --font-titan: var(--ff-titan);
+  --font-pompiere: var(--ff-pompiere);
+
+  --color-vert-clair: var(--clr-light-green);
+}
+
+@layer base {
+  :root {
+    --ff-titan: "Titan One", sans-serif;
+    --ff-pompiere: "Pompiere", sans-serif;
+
+    --clr-white: oklch(1 0 0);
+    --clr-light-green: hsl(145, 100% 50%);
+  }
+}
 
 body {
   margin: 0;
   height: 100vh;
-  font-family: "Poppins";
 }
 .wrapper {
   overflow-x: hidden;
