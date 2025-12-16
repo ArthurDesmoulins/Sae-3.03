@@ -21,9 +21,7 @@
       <p class="text-2xl font-titan w-95/100">
         <a href="index.html">Le tourisme: un rêve dangereux</a>
       </p>
-      <button class=" type="button">
-        <a href="about.html" class="underline hover:text-blue-800">About</a>
-      </button>
+      <a href="about.html" class="underline hover:text-blue-800">About</a>
     </nav>
 
     <!-- Section 1: salut -->
@@ -55,12 +53,41 @@
         src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
         type="module"
       ></script>
-      <dotlottie-wc
-        src="https://lottie.host/94d72cd6-4e73-4e27-a5a1-98a46f65ca57/hqEUUs93oQ.lottie"
-        style="width: 300px; height: 300px"
-        autoplay
-        loop
-      ></dotlottie-wc>
+
+      <canvas
+        id="dotlottie-canvas"
+        style="width: 500px; height: 500px"
+      ></canvas>
+
+      <script type="module">
+        import { DotLottie } from "@lottiefiles/dotlottie-web";
+        import { gsap } from "gsap";
+        import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+        // Enregistrer le plugin
+        gsap.registerPlugin(ScrollTrigger);
+
+        const dotLottie = new DotLottie({
+          canvas: document.querySelector("#dotlottie-canvas"),
+          src: "https://lottie.host/94d72cd6-4e73-4e27-a5a1-98a46f65ca57/hqEUUs93oQ.lottie",
+          autoplay: false, // Important : désactiver l'autoplay
+          loop: false,
+        });
+
+        // Attendre le chargement de l'animation
+        dotLottie.addEventListener("load", () => {
+          ScrollTrigger.create({
+            trigger: "#dotlottie-canvas", // L'élément qui déclenche l'action
+            start: "top center", // Début : haut de l'élément au centre de l'écran
+            end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+            onEnter: () => dotLottie.play(),
+            onLeave: () => dotLottie.pause(),
+            onEnterBack: () => dotLottie.play(),
+            onLeaveBack: () => dotLottie.pause(),
+            // markers: true // Décommentez pour afficher les marqueurs de debug
+          });
+        });
+      </script>
     </section>
 
     <!-- Parti horizontal -->
