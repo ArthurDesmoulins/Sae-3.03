@@ -127,7 +127,7 @@ body {
 
 svg {
   position: absolute;
-  top: 12em;
+  top: 4em;
   left: 10vw;
   width: 50vw;
 
@@ -151,7 +151,7 @@ svg {
 
   .pin {
     width: 100vw;
-    padding: 20vw 10vw;
+    padding: 10vw 6vw;
 
     h1 {
       font-size: 3rem;
@@ -177,8 +177,4 @@ svg {
       }
     }
   }
-}
-
-section {
-  height: 100vh;
 }

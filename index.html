@@ -17,7 +17,7 @@
 
   <body class="overflow-x-hidden font-pompiere bg-blanc-casse">
     <!-- Nav bar -->
-    <nav class="w-full h-18 bg-blue-400  flex items-center pl-4">
+    <nav class="w-full h-18 bg-blue-400 flex items-center pl-4">
       <p class="text-2xl font-titan w-95/100">
         <a href="index.html">Le tourisme: un rêve dangereux</a>
       </p>
@@ -25,69 +25,56 @@
     </nav>
 
     <!-- Section 1: salut -->
-    <section class="relativ min-h-screen overflow-hidden">
-      <img
-        src="public/Image/Tache-jaune.svg"
-        alt="rel"
-        class="absolute top-0 left-0 w-full h-full scale-70"
-      />
+    <section
+      class="h-screen w-screen flex justify-center items-center overflow-hidden"
+    >
+      <img src="public/Image/Tache-jaune.svg" alt="rel" class="scale-55" />
 
       <img
-        src="public/Image/B-hello.svg"
+        src="public/Image/Bonhomme/B-hello.svg"
         alt="rel"
-        class="absolute top-[45%] left-[50%] transform -translate-x-5/8 -translate-y-3/8 w-[30%] max-w-xs scale-45"
+        class="scale-65 transform -translate-x-[63vw] translate-y-1/6"
       />
 
-      <p
-        class="absolute top-[50%] left-[50%] transform translate-x-1/2 -translate-y-5/2 text-white"
-      >
-        Salut ! <br />
-        Viens voyager avec moi
-      </p>
+      <div class="absolute transform -translate-y-[10vh]">
+        <p class="text-black text-2xl">
+          Salut ! <br />
+          Viens voyager avec moi
+        </p>
+      </div>
     </section>
 
     <!-- Section 2: le rêve de voyager -->
-    <section class="bg-blue-900">
-      <h1 class="">Hello World</h1>
-      <script
-        src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
-        type="module"
-      ></script>
-
-      <canvas
-        id="dotlottie-canvas"
-        style="width: 500px; height: 500px"
-      ></canvas>
-
-      <script type="module">
-        import { DotLottie } from "@lottiefiles/dotlottie-web";
-        import { gsap } from "gsap";
-        import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-        // Enregistrer le plugin
-        gsap.registerPlugin(ScrollTrigger);
-
-        const dotLottie = new DotLottie({
-          canvas: document.querySelector("#dotlottie-canvas"),
-          src: "https://lottie.host/94d72cd6-4e73-4e27-a5a1-98a46f65ca57/hqEUUs93oQ.lottie",
-          autoplay: false, // Important : désactiver l'autoplay
-          loop: false,
-        });
-
-        // Attendre le chargement de l'animation
-        dotLottie.addEventListener("load", () => {
-          ScrollTrigger.create({
-            trigger: "#dotlottie-canvas", // L'élément qui déclenche l'action
-            start: "top center", // Début : haut de l'élément au centre de l'écran
-            end: "bottom center", // Fin : bas de l'élément au centre de l'écran
-            onEnter: () => dotLottie.play(),
-            onLeave: () => dotLottie.pause(),
-            onEnterBack: () => dotLottie.play(),
-            onLeaveBack: () => dotLottie.pause(),
-            // markers: true // Décommentez pour afficher les marqueurs de debug
-          });
-        });
-      </script>
+    <section class="h-[150vh] flex justify-center items-center">
+      <div class="absolute transform -translate-x-[30vw] -translate-y-[50vh]">
+        <h1 class="text-3xl font-titan">Départ – Le rêve de voyager</h1>
+      </div>
+      <img
+        src="public/Image/Tache-orange.svg"
+        alt="rien"
+        class="scale-50 transform -translate-x-[5vw] -rotate-183"
+      />
+      <img
+        src="public/Image/Bonhomme/B-pensif.svg"
+        alt="rel"
+        class="transform -translate-x-[72vw] translate-y-[10vh] scale-70"
+      />
+      <div class="transform -translate-x-[79vw] -translate-y-[12vh]">
+        <script
+          src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+          type="module"
+        ></script>
+        <dotlottie-wc
+          src="https://lottie.host/8ce1fc99-1be9-46e3-8454-83996f0cc9c8/Qyj63M7IFT.lottie"
+          style="width: 300px; height: 300px"
+          autoplay
+          loop
+        ></dotlottie-wc>
+      </div>
+      <p class="text-2xl absolute transform translate-x-[25vw]">
+        Le petit bonhomme rêve de <br />
+        découvrir le monde
+      </p>
     </section>
 
     <!-- Parti horizontal -->
@@ -121,12 +108,37 @@
         </svg>
 
         <!-- Graphique + terre qui tourne -->
-        <section class="sec1 pin">
-          <span>Advanced</span>
-          <h1>Signify Elegance</h1>
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur...</p>
-            <p>Lorem ipsum dolor sit amet consectetur...</p>
+        <section class="flex justify-center items-center min-w-screen">
+          <img
+            class="anim scale-50 transform -translate-y-[22vh] translate-x-[40vw]"
+            src="public/Image/Tache-vert-clair.svg"
+            alt="rien"
+          />
+          <span
+            class="anim text-2xl absolute transform -translate-x-[15vw] -translate-y-[50vh]"
+            >Comme lui, nous sommes près de 1,5 milliard chaque année à <br />
+            voyager à l’international. Le tourisme est un secteur dynamique, en
+            forte croissance, <br />
+            qui rapproche les cultures et les territoires.</span
+          >
+          <img
+            class="anim scale-75 transform -translate-y-[8vh] -translate-x-[60vw]"
+            src="public/Image/Bonhomme/B-jumelle.svg"
+            alt="rien"
+          />
+          <div
+            class="anim scale-50 transform -translate-x-[42vw] -translate-y-[10vh]"
+          >
+            <script
+              src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+              type="module"
+            ></script>
+            <dotlottie-wc
+              src="https://lottie.host/94d72cd6-4e73-4e27-a5a1-98a46f65ca57/hqEUUs93oQ.lottie"
+              style="width: 300px; height: 300px"
+              autoplay
+              loop
+            ></dotlottie-wc>
           </div>
         </section>
 
