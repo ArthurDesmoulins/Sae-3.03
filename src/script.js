@@ -109,3 +109,66 @@ dotLottie_terminal.addEventListener("load", () => {
     // markers: true // Décommentez pour afficher les marqueurs de debug
   });
 });
+
+const dotLottie_plane = new DotLottie({
+  canvas: document.querySelector("#dotlottie-canvas-plane"),
+  src: "https://lottie.host/bf4d93ce-1b77-4bb5-bd56-16f9815e6194/RngcSZT2xU.lottie",
+  autoplay: false, // Important : désactiver l'autoplay
+  loop: false,
+});
+
+// Attendre le chargement de l'animation
+dotLottie_plane.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: "#dotlottie-canvas-plane", // L'élément qui déclenche l'action
+    start: "top center", // Début : haut de l'élément au centre de l'écran
+    end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+    onEnter: () => dotLottie_plane.play(),
+    onLeave: () => dotLottie_plane.restart(),
+    onEnterBack: () => dotLottie_plane.play(),
+    onLeaveBack: () => dotLottie_plane.restart(),
+    // markers: true // Décommentez pour afficher les marqueurs de debug
+  });
+});
+
+const dotLottie_car = new DotLottie({
+  canvas: document.querySelector("#dotlottie-canvas-car"),
+  src: "https://lottie.host/4664af84-f83f-4d1e-a0ca-8b89043999d3/zsiB6jefJC.lottie",
+  autoplay: false, // Important : désactiver l'autoplay
+  loop: false,
+});
+
+// Attendre le chargement de l'animation
+dotLottie_car.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: "#dotlottie-canvas-car", // L'élément qui déclenche l'action
+    start: "top center", // Début : haut de l'élément au centre de l'écran
+    end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+    onEnter: () => dotLottie_car.play(),
+    onLeave: () => dotLottie_car.restart(),
+    onEnterBack: () => dotLottie_car.play(),
+    onLeaveBack: () => dotLottie_car.restart(),
+    // markers: true // Décommentez pour afficher les marqueurs de debug
+  });
+});
+
+const dotLottie_money = new DotLottie({
+  canvas: document.querySelector("#dotlottie-canvas-money"),
+  src: "https://lottie.host/5cf06e2b-2680-4edd-b46d-b62b477dacfd/5WNg9IbOx8.lottie",
+  autoplay: false, // Important : désactiver l'autoplay
+  loop: false,
+});
+
+// Attendre le chargement de l'animation
+dotLottie_money.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: "#dotlottie-canvas-money", // L'élément qui déclenche l'action
+    start: "top center", // Début : haut de l'élément au centre de l'écran
+    end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+    onEnter: () => dotLottie_money.play(),
+    onLeave: () => dotLottie_money.restart(),
+    onEnterBack: () => dotLottie_money.play(),
+    onLeaveBack: () => dotLottie_money.restart(),
+    // markers: true // Décommentez pour afficher les marqueurs de debug
+  });
+});

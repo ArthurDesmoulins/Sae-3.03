@@ -10,7 +10,7 @@
     <header class="flex flex-row items-center px-10 py-8 bg-accent">
       <h1 class="text-4xl text-light">Le tourisme : un rêve dangereux</h1>
     </header>
-    <main class="flex flex-col w-full h-full bg-bg">
+    <main class="flex flex-col items-center w-full h-full bg-bg">
       <section
         class="flex flex-col items-center justify-center w-screen h-screen py-32 px-50"
       >
@@ -144,15 +144,83 @@
 
       <section
         class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
-      ></section>
-
+      >
+        <div class="flex flex-col items-center justify-center w-full h-full">
+          <p class="text-3xl w-fit">
+            Cependant, l’avion est la première source d’émissions du tourisme :
+            il représente 52 % des émissions directes du secteur à l’échelle
+            mondiale, et 29 % en France. Un choix pratique, mais très polluant.
+          </p>
+          <div
+            class="relative flex flex-row w-full h-full bg-[url(/public/Image/Tache-bleu-clair-nuages.svg)] bg-no-repeat bg-center bg-contain"
+          >
+            <canvas
+              id="dotlottie-canvas-plane"
+              style="width: 100%; height: auto"
+            ></canvas>
+            <img
+              class="absolute bottom-0 right-28 max-h-1/2 w-auto"
+              src="/public/Image/B-ballon.svg"
+              alt="Ballon"
+            />
+          </div>
+        </div>
+      </section>
+      <p class="text-3xl w-fit">
+        Une fois arrivé, le petit bonhomme continue son voyage en voiture ou en
+        bus.
+      </p>
       <section
         class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
-      ></section>
+      >
+        <div class="flex flex-col items-center justify-center w-full h-full">
+          <div
+            class="flex flex-row items-end w-full h-full bg-[url(/public/Image/Tache-bleu-clair-nuages.svg)] bg-no-repeat bg-center bg-contain"
+          >
+            <img
+              class="w-auto max-h-2/3"
+              src="/public/Image/B-cat.svg"
+              alt="Chat"
+            />
+            <canvas
+              id="dotlottie-canvas-car"
+              style="width: 90%; height: auto"
+            ></canvas>
+          </div>
+          <p class="text-3xl w-fit mt-20">
+            Mais le transport routier reste très émetteur : il représente 18 %
+            des émissions directes du tourisme. En France, 69 % de l’empreinte
+            carbone du tourisme provient du transport, tous modes confondus.
+          </p>
+        </div>
+      </section>
 
       <section
-        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
-      ></section>
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50 gap-14"
+      >
+        <h2 class="text-3xl -ml-28">Étape 2 – L’hôtel : se loger</h2>
+        <p class="text-3xl w-full text-center">
+          Le petit bonhomme pose ses valises à l’hôtel.
+        </p>
+        <div
+          class="relative flex flex-col w-full h-full items-center justify-center bg-[url(/public/Image/Tache-orange-clair.svg)] bg-no-repeat bg-center bg-contain"
+        >
+          <canvas
+            id="dotlottie-canvas-money"
+            style="width: auto; min-height: 90%"
+          ></canvas>
+          <img
+            class="absolute bottom-0 right-40 max-h-1/2 w-auto"
+            src="/public/Image/B-hotel.svg"
+            alt="Hôtel"
+          />
+        </div>
+        <p class="text-3xl w-full">
+          L’hébergement est essentiel au tourisme et contribue fortement à
+          l’économie : avant la crise, le tourisme représentait 4,1 % du PIB
+          français, soit environ 99 milliards d’euros.
+        </p>
+      </section>
 
       <section
         class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
