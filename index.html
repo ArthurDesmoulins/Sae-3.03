@@ -22,7 +22,7 @@
             src="/public/Image/B-hello.svg"
             alt="Bonjour"
           />
-          <div class="flex flex-col items-center justify-start h-full pt-52">
+          <div class="flex flex-col items-center justify-start h-2/3">
             <h2 class="text-2xl">
               Salut ! <br />
               Viens voyager avec moi !
@@ -30,33 +30,95 @@
           </div>
         </div>
       </section>
+
       <section
         class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50 gap-14"
       >
         <h2 class="text-3xl -ml-28">Départ – Le rêve de voyager</h2>
-        <div class="flex flex-row items-center justify-start w-full h-full">
+        <div class="flex flex-row items-center justify-between w-full h-full">
           <div
-            class="flex flex-col w-full h-full pt-10 -ml-32 bg-[url(/public/Image/Tache-orange.svg)] bg-no-repeat bg-center bg-contain"
+            class="flex flex-col min-w-2/3 h-full pt-10 -ml-32 bg-[url(/public/Image/Tache-orange.svg)] bg-no-repeat bg-center bg-contain"
           >
-            <img
-              class="w-auto h-full"
-              src="/public/Image/B-pense.svg"
-              alt="Pense"
-            />
+            <canvas
+              id="dotlottie-canvas-pense"
+              style="width: auto; max-height: 100%"
+            ></canvas>
           </div>
-          <p class="text-3xl">Le petit bonhomme rêve de découvrir le monde.</p>
+          <p class="text-3xl w-fit">
+            Le petit bonhomme rêve de découvrir le monde.
+          </p>
         </div>
       </section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
-      <section class="flex w-screen h-screen"></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      >
+        <div
+          class="flex flex-col items-start justify-center w-full h-full gap-20"
+        >
+          <p class="text-3xl w-fit">
+            Comme lui, nous sommes près de 1,5 milliard chaque année à voyager à
+            l’international. Le tourisme est un secteur dynamique, en forte
+            croissance, qui rapproche les cultures et les territoires.
+          </p>
+          <div class="flex flex-row w-full h-full items-center justify-between">
+            <img
+              class="max-h-2/3 w-auto translate-y-32"
+              src="/public/Image/B-jumelles.svg"
+              alt="Bonjour"
+            />
+            <div
+              class="flex flex-row items-center justify-between min-w-2/3 h-full pt-10 bg-[url(/public/Image/Tache-vert-clair.svg)] bg-no-repeat bg-center bg-contain"
+            >
+              <canvas
+                id="dotlottie-canvas-graph"
+                style="width: auto; min-height: 60%; margin-right: -10rem"
+              ></canvas>
+              <canvas
+                id="dotlottie-canvas-earth"
+                style="width: auto; min-height: 60%; margin-left: -10rem"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
+      ></section>
     </main>
+    <script type="module" src="/src/script.js"></script>
   </body>
 </html>
