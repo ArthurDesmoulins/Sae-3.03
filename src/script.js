@@ -172,3 +172,45 @@ dotLottie_money.addEventListener("load", () => {
     // markers: true // Décommentez pour afficher les marqueurs de debug
   });
 });
+
+const dotLottie_hotel = new DotLottie({
+  canvas: document.querySelector("#dotlottie-canvas-hotel"),
+  src: "https://lottie.host/95ac6d32-cee4-41f8-b9f7-1911415f1ae1/LhqiW9UOUm.lottie",
+  autoplay: false, // Important : désactiver l'autoplay
+  loop: false,
+});
+
+// Attendre le chargement de l'animation
+dotLottie_hotel.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: "#dotlottie-canvas-hotel", // L'élément qui déclenche l'action
+    start: "top center", // Début : haut de l'élément au centre de l'écran
+    end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+    onEnter: () => dotLottie_hotel.play(),
+    onLeave: () => dotLottie_hotel.restart(),
+    onEnterBack: () => dotLottie_hotel.play(),
+    onLeaveBack: () => dotLottie_hotel.restart(),
+    // markers: true // Décommentez pour afficher les marqueurs de debug
+  });
+});
+
+const dotLottie_CO2 = new DotLottie({
+  canvas: document.querySelector("#dotlottie-canvas-CO2"),
+  src: "https://lottie.host/b8ed37f8-2964-4643-8859-f1db7f1ad0d0/dEi4OxUxak.lottie",
+  autoplay: false, // Important : désactiver l'autoplay
+  loop: false,
+});
+
+// Attendre le chargement de l'animation
+dotLottie_CO2.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: "#dotlottie-canvas-CO2", // L'élément qui déclenche l'action
+    start: "top center", // Début : haut de l'élément au centre de l'écran
+    end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+    onEnter: () => dotLottie_CO2.play(),
+    onLeave: () => dotLottie_CO2.restart(),
+    onEnterBack: () => dotLottie_CO2.play(),
+    onLeaveBack: () => dotLottie_CO2.restart(),
+    // markers: true // Décommentez pour afficher les marqueurs de debug
+  });
+});

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
     <title>Le tourisme : un rêve dangereux</title>
+    <link rel="icon" type="image" href="/public/Image/Icon.png" />
   </head>
   <body>
     <header class="flex flex-row items-center px-10 py-8 bg-accent">
@@ -223,16 +224,102 @@
       </section>
 
       <section
-        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
-      ></section>
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50 gap-14"
+      >
+        <p class="text-3xl w-fit">
+          L’hébergement est essentiel au tourisme et contribue fortement à
+          l’économie : avant la crise, le tourisme représentait 4,1 % du PIB
+          français, soit environ 99 milliards d’euros.
+        </p>
+        <div
+          class="relative flex flex-col w-full h-full bg-[url(/public/Image/Tache-jaune.svg)] bg-no-repeat bg-center bg-contain"
+        >
+          <canvas
+            id="dotlottie-canvas-hotel"
+            style="width: auto; min-height: 90%"
+          ></canvas>
+          <img
+            class="absolute bottom-0 right-60 max-h-1/4"
+            src="/public/Image/B-balais.svg"
+            alt="Balais"
+          />
+        </div>
+      </section>
 
       <section
-        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
-      ></section>
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50 gap-14"
+      >
+        <h2 class="text-3xl -ml-28">
+          Étape 3 – Le site touristique et ses consommations
+        </h2>
+        <div
+          class="flex flex-row w-full h-full items-end justify-center pb-16 gap-20 bg-[url(/public/Image/Tache-vert-clair.svg)] bg-no-repeat bg-center bg-contain"
+        >
+          <img src="/public/Image/B-choque.svg" alt="Choqué" />
+          <img src="/public/Image/Plage.svg" alt="Plage" />
+        </div>
+        <p class="text-3xl w-fit">
+          Le surtourisme dégrade les milieux : artificialisation des sols, perte
+          de biodiversité, saturation des espaces. 80 % de l’activité
+          touristique se concentre sur seulement 20 % du territoire, accentuant
+          les déséquilibres.
+        </p>
+      </section>
 
       <section
-        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50"
-      ></section>
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50 gap-14"
+      >
+        <div
+          class="flex flex-col w-full h-full items-center justify-center bg-[url(/public/Image/Tache-bleu.svg)] bg-no-repeat bg-center bg-contain"
+        >
+          <canvas
+            id="dotlottie-canvas-CO2"
+            style="width: auto; min-height: 90%"
+          ></canvas>
+        </div>
+        <p class="text-3xl w-fit">
+          Au fil de son séjour, le petit bonhomme mange au restaurant, achète
+          des souvenirs et participe à des activités. Ces dépenses créent une
+          diversité économique et soutiennent l’emploi local.  Mais elles
+          génèrent aussi des émissions indirectes importantes : environ 2,5
+          milliards de tonnes de CO₂e liées aux services, hébergements et
+          achats, et 0,9 milliard dues aux véhicules privés à l’échelle
+          mondiale.
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col items-start justify-center w-screen h-screen py-32 px-50 gap-14"
+      >
+        <h2 class="text-3xl -ml-28">
+          Étape 4 – Retour : le tourisme de demain
+        </h2>
+        <div class="flex flex-row w-full h-full items-center justify-around">
+          <div
+            class="flex flex-col w-2/3 h-full items-center bg-[url(/public/Image/Tache-orange-clair.svg)] bg-no-repeat bg-center bg-contain"
+          >
+            <img
+              class="h-full w-auto"
+              src="/public/Image/B-feu.svg"
+              alt="Feu"
+            />
+          </div>
+          <p class="text-3xl w-1/3">
+            De retour chez lui, le petit bonhomme s’interroge. Des alternatives
+            se développent : slow-tourisme, mobilités douces, hébergements
+            durables, plus respectueux de l’environnement.
+          </p>
+        </div>
+      </section>
+      <p class="text-3xl w-2/3 text-center pb-32">
+        Le voyage fait rêver, crée des emplois et relie les cultures, mais il a
+        aussi un impact environnemental majeur. À travers le parcours du petit
+        bonhomme, on comprend que chaque étape compte. Le défi du tourisme de
+        demain est clair : continuer à découvrir le monde, tout en réduisant nos
+        déplacements les plus polluants et en voyageant de manière plus
+        responsable. Voyager mieux, et parfois moins, devient essentiel pour
+        préserver la planète.
+      </p>
     </main>
     <script type="module" src="/src/script.js"></script>
   </body>
