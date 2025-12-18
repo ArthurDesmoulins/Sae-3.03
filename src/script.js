@@ -88,3 +88,24 @@ dotLottie_world.addEventListener("load", () => {
     // markers: true // Décommentez pour afficher les marqueurs de debug
   });
 });
+
+const dotLottie_terminal = new DotLottie({
+  canvas: document.querySelector("#dotlottie-canvas-terminal"),
+  src: "https://lottie.host/32bdf6fa-b929-4cd3-9a4f-02f6afe661f8/42l1qHdUwc.lottie",
+  autoplay: false, // Important : désactiver l'autoplay
+  loop: false,
+});
+
+// Attendre le chargement de l'animation
+dotLottie_terminal.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: "#dotlottie-canvas-terminal", // L'élément qui déclenche l'action
+    start: "top center", // Début : haut de l'élément au centre de l'écran
+    end: "bottom center", // Fin : bas de l'élément au centre de l'écran
+    onEnter: () => dotLottie_terminal.play(),
+    onLeave: () => dotLottie_terminal.restart(),
+    onEnterBack: () => dotLottie_terminal.play(),
+    onLeaveBack: () => dotLottie_terminal.restart(),
+    // markers: true // Décommentez pour afficher les marqueurs de debug
+  });
+});
