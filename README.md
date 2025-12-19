@@ -2,7 +2,7 @@
 
 ## 📖 Présentation du projet
 
-Nous avions pour objectif de créer un site internet de datavisualisation sur la thématique du tourisme. Nous avons trouvé les données sur le site de ademe.fr et nous nous sommes inspirés du site qqf.fr pour réaliser les visuels et leur mise en page.
+Nous avions pour objectif de créer un site internet de datavisualisation sur la thématique du tourisme. Nous avons trouvé les données sur le site de [ademe.fr](https://www.ademe.fr) et nous nous sommes inspirés du site [qqf.fr](https://www.qqf.fr) pour réaliser les visuels et leur mise en page.
 
 ---
 
@@ -97,3 +97,7 @@ Les animations jouent un rôle clé pour captiver l'utilisateur :
 5. **Déploiement** : Build production avec Vite et déploiment sur Github pages
 
 ---
+
+## ✏️ Projet Figma
+
+[Projet Figma](https://www.figma.com/design/XGnlmXJAVPMuCvMgU7G30F/Sa%C3%A9-3.03?node-id=202-33&t=zaTkcOUTgokwQm40-1) avec la palette, l'univers graphique, le storyboard et la maquette.
